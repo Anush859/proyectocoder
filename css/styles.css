@@ -127,6 +127,7 @@
     width: 80%;
     margin: 20px;
     overflow: hidden;
+    
 }
 
 .slides {
@@ -137,7 +138,7 @@
 
 .slide {
 
-    flex: 1 0 0;
+    flex: 10 0;
     width: 100%;
     height: auto;
 }
@@ -150,7 +151,7 @@
 }
 
 .controls {
-    position: absolute;
+    position:absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -165,7 +166,7 @@
     height: 10px;
     margin: 0 5px;
     background-color: #ddd;
-    transition: background-color 0.5s ease-in
+    transition:background-color 0.5s ease-in
 }
 
 .controls label:hover {
@@ -249,7 +250,7 @@ input[type="radio"] {
 .column1 h2,
 .column2 h2,
 .column3 h2 {
-    font-size: .7rem;
+    font-size: 1rem;
     display: flex;
     margin-top: 10px;
     padding: 5px;
@@ -257,7 +258,7 @@ input[type="radio"] {
 }
 
 .column1 p {
-    font-size: 0.4rem;
+    font-size: .8rem;
     margin-top: 2px;
     padding: 5px;
 }
@@ -277,7 +278,7 @@ input[type="radio"] {
 }
 
 .row2 {
-    font-size: .4rem;
+    font-size: .7rem;
     margin-top: 2px;
     gap: 10px;
     padding: 5px;
@@ -449,7 +450,7 @@ body {
     .column1 h2,
     .column2 h2,
     .column3 h2 {
-        font-size: .8rem;
+        font-size: .9rem;
         margin-top: 20px;
         padding: 10px;
         display: flex;
