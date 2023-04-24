@@ -240,11 +240,11 @@ input[type="radio"] {
 /* .........................footer............................... */
 
 .container-footer {
-    display: flex;
-    justify-content: space-between;
+    flex direction: column;
+    align-items:center;  
     background-color: blue;
     color: white;
-    gap: 10px;
+    
 }
 
 .column1 h2,
@@ -479,7 +479,8 @@ body {
 @media(min-width: 400px) {
     .container-footer {
         display: flex;
-        justify-content: space-between;
+        flex direction: row;
+        justify-content:space-between;
         background-color: blue;
         color: white;
         gap: 10px;
