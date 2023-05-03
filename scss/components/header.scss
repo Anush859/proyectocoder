@@ -1,0 +1,69 @@
+/* ..................nav..................................... */
+
+.container-menu {
+    width: 100%;
+    font-family: $fuente-principal;
+    background-color: $color-secundario;
+    display: flex;
+    justify-content: space-around;
+    font-size: .9rem;
+
+}
+
+
+.menu ul {
+    list-style: none;
+
+}
+
+.menu>nav>ul>li {
+    display: inline-block;
+    position: relative;
+    & a {
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    background-color: transparent;
+    color:$color-terciario;
+}
+    &:hover {
+        background-color:$color-primario;
+    }
+    
+}
+
+.menu ul ul {
+    position: absolute;
+    left: 0%;
+    top: 40px;
+    display: none;
+    white-space: nowrap;
+    & li{
+        float: none;
+        width: 100%;
+        }
+    & a{
+        padding: 0 10px;
+        line-height: 15px;
+        font-size: 10px;
+    
+    }
+}
+
+.inline-submenu {
+    display: flex;
+    & a { 
+        margin-right: 5px;
+    }
+}
+
+
+    .menu ul li:hover>ul {
+    display: block;
+}
+.parrafo-index{
+    padding-top: 500px;
+    font-size: 15px;
+    
+}
+

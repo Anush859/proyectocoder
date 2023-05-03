@@ -1,0 +1,35 @@
+/* ........................servicios............................... */
+
+.titulo-servicios h2,
+.titulo-casosdeexito h2,
+.titulo-sobrenosotros h2,
+.titulo-contactanos h2 {
+    text-align: center;
+    font-size: 1,5rem;
+    margin: 1em;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+

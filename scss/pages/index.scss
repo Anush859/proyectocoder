@@ -1,0 +1,34 @@
+/* ................header....................................... */
+
+
+.header-superior {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2em;
+    background-color:$color-terciario;
+    background: linear-gradient(blue,rgba(112, 216, 204, 0.847));
+    
+}
+
+.search input {
+    font-size: 10px;
+    height: 15px;
+
+}
+
+.logo img {
+    width: 60px;
+    box-shadow: -10px -10px;
+}
+
+.titulo-principal {
+    font-family: cursive, $fuente-principal;
+    font-size: 2rem;
+    color: $color-terciario;
+    
+
+
+}
+
