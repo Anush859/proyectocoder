@@ -188,64 +188,119 @@
 .container-menu {
   width: 100%;
   font-family: sans-serif;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
-.menu ul {
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > nav > ul {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu > nav > ul > li {
-  display: inline-block;
   position: relative;
 }
-.menu > nav > ul > li a {
+
+.menu > nav > ul > li > a {
   display: block;
-  padding: 0 20px;
-  line-height: 40px;
-  background-color: transparent;
-  color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
 }
-.menu > nav > ul > li:hover {
+
+.menu > nav > ul > li:hover > a {
   background-color: blue;
 }
 
-.menu ul ul {
+.menu > nav > ul > li > ul {
   position: absolute;
-  left: 0%;
-  top: 40px;
+  top: 100%;
+  left: 0;
+  background-color: #000;
   display: none;
-  white-space: nowrap;
-}
-.menu ul ul li {
-  float: none;
-  width: 100%;
-}
-.menu ul ul a {
-  padding: 0 10px;
-  line-height: 15px;
-  font-size: 10px;
 }
 
-.inline-submenu {
-  display: flex;
-}
-.inline-submenu a {
-  margin-right: 5px;
-}
-
-.menu ul li:hover > ul {
+.menu > nav > ul > li > ul > li > a {
+  color: #fff;
   display: block;
+  padding: 1rem;
 }
 
-.parrafo-index {
-  padding-top: 500px;
-  font-size: 15px;
+.menu > nav > ul > li > ul > li > a:hover {
+  background-color: blue;
 }
 
+.menu-hamburguesa-checkbox {
+  display: none;
+}
+
+.menu-hamburguesa {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-hamburguesa span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .menu > nav > ul {
+    display: none;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+  .menu-hamburguesa.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-hamburguesa.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-hamburguesa.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .menu-hamburguesa span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  .menu-hamburguesa.active ~ nav {
+    top: 0;
+  }
+  .menu-hamburguesa-checkbox:checked ~ .menu-hamburguesa {
+    display: block;
+  }
+  .menu-hamburguesa-checkbox:checked ~ .menu-hamburguesa.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-hamburguesa-checkbox:checked ~ .menu-hamburguesa.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-hamburguesa-checkbox:checked ~ .menu-hamburguesa.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
 /* ...............index carrusell................ */
 .galeria {
   margin: 20px 0;
@@ -258,7 +313,7 @@
   flex-wrap: wrap;
   justify-content: center;
   scale: 2 2;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .carousel {
@@ -457,6 +512,17 @@ body {
   font-family: cursive, sans-serif;
   font-size: 2rem;
   color: black;
+}
+
+.parrafo-index article p {
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.parrafo-index {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
