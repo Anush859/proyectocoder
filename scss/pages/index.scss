@@ -25,9 +25,9 @@
 
 .titulo-principal {
     font-family: cursive, $fuente-principal;
-    font-size: 2rem;
+    font-size: 40px;
     color: $color-terciario;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .parrafo-index article p {
@@ -39,6 +39,8 @@
     font-weight: bold;
     font-size: 1.1em;
 }
+
+
 
 
 

@@ -1,23 +1,106 @@
-
-
-    
-
-
-.parrafo-index{
+.parrafo-index {
 
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 300px;
     padding: 20px;
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 40px;
+    line-height: 2.5em;
     text-align: justify;
 }
-.container-nosotros {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.contenedor-nosotros {
+    margin-bottom: 500px;
+
+    & h2 {
+        margin-top: -100px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-decoration: underline;
+    }
 }
 
 
-        
+.parrafo-sobre-nosotros {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: hsla(175, 67%, 24%, 0.247);
+    padding: 10px;
+    font-weight: bold;
+
+    & img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border: 2px solid $color-secundario;
+        margin-bottom: 90px;
+        transform: scale(0.8);
+        box-shadow: -50px -50px 0 0 rgba(39, 36, 113, 0.371);
+    }
+}
+
+.contenedor-equipo {
+    margin-bottom: 500px;
+
+    & h2 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.parrafo-equipo {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: hsla(175, 67%, 24%, 0.247);
+    padding: 80px;
+    font-weight: bold;
+    margin-bottom: 400px;
+
+    & img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border: 2px solid $color-secundario;
+        transform: scale(0.8);
+        box-shadow: -50px -50px 0 0 rgba(39, 36, 113, 0.371);
+        margin-top: -500px;
+    }
+}
+
+.equipo-formulario {
+    padding: 100px;
+    margin-top: -500px;
+    border: 100px
+    
+}
+
+.form-nombre {
+    font: size 13px; ;
+    padding: 4px;
+    text-decoration: solid;
+    font-weight: bold;
+
+}
+
+.form-correo{
+    padding: 4px;
+    text-decoration: solid;
+    font-weight: bold;
+    }
+
+
+.label-mensaje-correo {
+    text-decoration: solid;
+}
+.input text {
+    display: inline-block;
+    vertical-align: middle;
+}
