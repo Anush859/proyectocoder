@@ -7,9 +7,9 @@
     text-align: center;
     font-size: 1rem;
     padding: 2em;
-    background-color:$color-terciario;
-    background: linear-gradient(blue,rgba(112, 216, 204, 0.847));
-    
+    background-color: $color-terciario;
+    background: linear-gradient(blue, rgba(112, 216, 204, 0.847));
+
 }
 
 .search input {
@@ -24,21 +24,23 @@
 }
 
 .titulo-principal {
-    
+
     font-size: 30px;
     color: $color-terciario;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.parrafo-index article p {
-    margin-bottom: 50px;
-    line-height:1.5; 
-}
+
+
 .parrafo-index {
-    margin-top:100px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: hsla(175, 67%, 24%, 0.247);
+    padding: 10px;
     font-weight: bold;
-    font-size: .75rem;
 }
+
 
 
 
@@ -48,7 +50,3 @@
         gap: 2px;
     }
 }
-
-
-
-
