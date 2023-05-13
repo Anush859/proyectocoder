@@ -99,8 +99,6 @@
   background-color: blue;
   color: black;
   background: linear-gradient(to left, blue, rgba(112, 216, 204, 0.847), blue);
-  position: fixed;
-  bottom: 0;
 }
 
 .column1 h2,
