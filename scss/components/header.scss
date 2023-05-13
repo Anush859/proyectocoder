@@ -2,7 +2,7 @@
 .container-menu {
     width: 100%;
     font-family: sans-serif;
-    background-color: black;
+    background-color: $color-terciario;
     display: flex;
     justify-content: space-around;
     font-size: .7rem;
@@ -19,19 +19,19 @@
     display: inline-block;
     position: relative;
 
-}
 
-.menu>nav>ul>li>a {
-    display: block;
-    padding: 0 20px;
-    line-height: 40px;
-    background-color: transparent;
-    color: white;
-}
 
-.menu>nav>ul>li>a:hover {
-    background-color: blue;
+    & a {
+        display: block;
+        padding: 0 20px;
+        line-height: 40px;
+        background-color: transparent;
+        color: $color-secundario;
+    }
 
+    &:hover {
+        background-color: $color-primario;
+    }
 }
 
 .menu ul ul {
@@ -41,29 +41,33 @@
     display: none;
     white-space: nowrap;
 
-}
 
-.menu ul ul li {
-    float: none;
-    width: 100%;
-}
 
-.menu ul ul li a {
-    padding: 0 10px;
-    line-height: 15px;
-    font-size: 10px;
-}
+    & li {
+        float: none;
+        width: 100%;
+    }
 
-.menu ul ul li a:hover {
-    background-color:blue;
+    & a {
+        padding: 0 10px;
+        line-height: 15px;
+        font-size: 10px;
+
+        &:hover {
+            background-color: $color-primario;
+        }
+    }
+
 }
 
 .inline-submenu {
     display: flex;
-}
 
-.inline-submenu a {
-    margin-right: 5px;
+
+    & a {
+        margin-right: 5px;
+    }
+
 }
 
 

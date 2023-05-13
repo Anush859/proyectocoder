@@ -8,8 +8,8 @@
     background-color: $color-primario;
     color: $color-terciario;
     background: linear-gradient(to left, blue, rgba(112, 216, 204, 0.847), blue);
-    
-    
+
+
 }
 
 
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 600px) {
-        .container-footer {
+    .container-footer {
         flex-direction: row;
         height: auto;
         justify-content: space-between;
@@ -57,7 +57,8 @@
         width: 33.33%;
         text-align: center;
     }
-    .column2{
+
+    .column2 {
         margin-left: 100px;
     }
 
@@ -74,35 +75,33 @@
 
 @media (min-width: 1024px) {
     .container-footer {
-    padding: 40px;
+        padding: 40px;
     }
 
     .column1 h2,
     .column2 h2,
     .column3 h2 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    text-align: center;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
     }
 
     .column1 p {
-    font-size: 1rem;
-    margin-top: 10px;
-    padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .row {
-    font-size: 1rem;
-    margin-top: 0;
-    gap: 20px;
+        font-size: 1rem;
+        margin-top: 0;
+        gap: 20px;
     }
 
     .row img {
-    width: 30px;
-    height: 30px;
+        width: 30px;
+        height: 30px;
     }
 }
-
-

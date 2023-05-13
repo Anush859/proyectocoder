@@ -1,10 +1,7 @@
-
-
-
 /* .................casos de exito............... */
 
 .container-casos-exito {
-    display:flex; 
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
@@ -18,6 +15,7 @@
     margin-bottom: 30px;
     padding: 10px;
     border: 2px solid $color-secundario;
+
     & img {
         display: block;
         width: 100%;
@@ -26,21 +24,24 @@
         border: 2px solid $color-secundario;
         margin-bottom: 10px;
     }
+
     & p {
-        margin-top:30px;
+        margin-top: 30px;
         font-weight: bold;
-        font-size: 1.1em; 
+        font-size: 1.1em;
     }
 }
 
 .container-casos-exito {
     text-align: center;
+
     & h2 {
         margin-top: 0;
         font-size: 1rem;
     }
+
     & p {
         margin-top: 0;
         font-size: 15px;
-        }
+    }
 }
