@@ -19,7 +19,7 @@
     width: 100%;
     margin: 20px;
     overflow: hidden;
-    
+
 }
 
 .slides {
@@ -43,7 +43,7 @@
 }
 
 .controls {
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -58,7 +58,7 @@
     height: 10px;
     margin: 0 5px;
     background-color: #ddd;
-    transition:background-color 0.5s ease-in
+    transition: background-color 0.5s ease-in
 }
 
 .controls label:hover {
@@ -84,4 +84,3 @@ input[type="radio"] {
 #slide-4:checked~.slides {
     transform: translateX(-75%);
 }
-
