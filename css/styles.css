@@ -606,7 +606,7 @@ body {
 }
 
 .search input {
-  font-size: 10px;
+  font-size: 8px;
   height: 15px;
 }
 
@@ -632,9 +632,9 @@ body {
   font-size: 0.75rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .container-menu {
-    font-size: 0.35rem;
+    font-size: 0.3rem;
     gap: 2px;
   }
 }
