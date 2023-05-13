@@ -24,8 +24,8 @@
 }
 
 .titulo-principal {
-    font-family: cursive, $fuente-principal;
-    font-size: 40px;
+    
+    font-size: 30px;
     color: $color-terciario;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -37,12 +37,17 @@
 .parrafo-index {
     margin-top:100px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: .75rem;
 }
 
 
 
-
+@media(max-width: 600px) {
+    .container-menu {
+        font-size: .35rem;
+        gap: 2px;
+    }
+}
 
 
 

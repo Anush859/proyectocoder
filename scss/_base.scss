@@ -8,10 +8,10 @@
 $color-primario: blue;
 $color-secundario: white;
 $color-terciario:black;
-$fuente-principal:sans-serif;
 
-@mixin flex-center {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+
+// @mixin flex-center {
+//     display:flex;
+//     justify-content:center;
+//     align-items:center;
+// }
